@@ -20,7 +20,7 @@ function createTodo() {
     };
 
     try {
-      await axios, "http://localhost:6000/api/create";
+      await axios.post("http://localhost:6000/api/create");
     } catch (err) {
       console.log("Failed");
     }
